@@ -3,67 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nigel Gary</title>
+    <title>Nigel Gary Portfolio</title>
     <!-- Favicon-->
     <link rel="shortcut icon" href="./image/sam_logo.png" type="image/x-icon" />
     <!-- CSS-->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header id="page_header">
-      <div id="logoContainer">
+    <header>
+      <!-- Header section containing the site title and navigation -->
+      <div class="header-left">
         <img
           src="./image/Nigel Gary Headshot.png"
-          alt="Headshot"
-          height="100"
           width="125"
+          height="125"
+          alt="Nigel Gary Logo"
         />
-        <span><strong> Nigel Gary</strong></span>
+        <h1>Nigel Gary's Portfolio</h1>
       </div>
-      <hr />
-      <nav id="navbar">
-        <a href="./index.html" class="navOption">Home</a>
-        <a href="./html/about_me.html" class="navOption">About Me</a>
-        <a href="./html/resume.html" class="navOption">Resume</a>
+      <nav class="header-right">
+        <ul>
+          <!-- Navigation menu -->
+          <li><a href="/">Home</a></li>
+          <li><a href="./html/resume.html">Resume</a></li>
+          <li><a href="./html/about_me.html">About Me</a></li>
+        </ul>
       </nav>
     </header>
-    <hr />
+
     <main>
-      <article>
-        <figure>
-          <figcaption>
-            Everybody comes to a point in their life when they want to quit. But
-            it's what you do at that moment that determines who you are! - David
-            Goggins
-          </figcaption>
-        </figure>
-      </article>
-      <hr />
-      <p>
-        Hi, I'm Nigel, and I'm currently studying Information Technology with a
-        focus in CyberSecurity. I currently work in the field doing
-        CyberSecurity as well as cloud infrastructure. I'm currently a super
-        senior at Oakland University. I am expected to gradute April of 2024. To
-        know more about me or my work experiecne, check out my
-        <a href="./html/resume.html">Resume</a> and
-        <a href="./html/about_me.html">About Me</a> pages!
-      </p>
-      <hr />
-      <span><strong>Education Progress:</strong></span>
-      <br />
-      <br />
-      <label for="file">Credits Toward Degree: 157/128</label>
-      <progress id="file" value="157" max="128">122%</progress>
+      <section class="left-section">
+        <p>
+          <!-- Introduction paragraph -->
+          Hi, I'm Nigel, and I'm currently studying Information Technology with
+          a focus in CyberSecurity. I currently work in the field doing
+          CyberSecurity as well as cloud infrastructure. I'm currently a super
+          senior at Oakland University. I am expected to gradute April of 2024.
+        </p>
+        <p>
+          <!-- Link to other pages -->
+          To know more about me, check out either my
+          <a href="html/my_resume.html">Resume</a> or
+          <a href="html/my_fun_facts.html">About Me</a> pages.
+        </p>
+        <button>Button</button>
+
+        <!-- Degree progress -->
+        <h2>Degree Progress: 157/128</h2>
+        <progress id="file" max="128" value="157">122%</progress>
+        <p>
+          <!-- Degree progress information -->
+          I am a transfer student from Southern University. I was a mechanical
+          engineering major but then changed my major to IT with a focus in
+          CyberSecurity. I am. That is why my progress is over the amount
+          designated amount.
+        </p>
+      </section>
+      <section class="right-section">
+        <!-- Content for the right section -->
+        <img
+          src="./image/Us.png"
+          alt="Picture of me and girlfriend"
+          height="100px"
+        />
+      </section>
     </main>
-    <hr />
     <footer>
+      <!-- Footer -->
+
       <p>&copy; 2023 Nigel Gary</p>
-      <address>1555 Kingsmere Rd, Rochester Hills, MI 48309</address>
-      <br />
-      <br />
-      <a href="https://github.com/d2kinu.">GitHub</a> |
-      <a href="mailto:nigelgary@oakland.edu">Email Me</a> |
-      <a href="tel:3135109093">Call Me</a>
+      <p>
+        Email:
+        <a href="mailto:nigelgary@oakland.edu">Email Me</a>
+      </p>
+      <p>
+        <!-- Other Links -->
+        Look at my projedcts:
+        <a href="https://github.com/d2kinu." target="_blank">GitHub</a>
+        |
+        <a href="tel:3135109093" target="_blank">Call Me</a>
+      </p>
     </footer>
   </body>
 </html>
